@@ -1,0 +1,54 @@
+body{
+  display: flex;
+  flex-direction: column;
+  font-family:'Courier New', Courier, monospace;
+}
+
+.header{
+  display: flex;
+  justify-content: space-between;
+  padding: 1vw 4vw;
+  flex-wrap: wrap;
+  font-size: 1vw;
+}
+
+.header .right{
+  display: flex;
+  gap: 2vw;
+}
+
+.main{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 3vw;
+  font-weight: bold;
+}
+
+.buttons{
+  display: inline;
+  margin: auto;
+}
+
+.courseEntry{
+  display: flex;
+  flex-direction: column;
+  gap: 2vw;
+  padding: 3vw 5vw;
+  background-color: lightgreen;
+  margin: 0 auto;
+  border: 2px solid black;
+  width: 600px;
+  border-radius: 5vw;
+}
+
+.container{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.bottom{
+  display: inline;
+}
+

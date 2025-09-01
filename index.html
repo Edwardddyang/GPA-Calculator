@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Canadian GPA Calculator</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="header">
+    <div>Logo</div>
+    <div class="right">
+      <div>Login</div>
+      <div>Home</div>
+    </div>
+  </div>
+  <div class="main">
+    <div>Canadian University GPA Calculator</div>
+    <div style="font-size: 1vw;">Discover your grades</div>
+  </div>
+  <div class="buttons">
+    <input type="text" placeholder="Course Code" id="courseInput">
+    <button id="addCourse">Add Course</button>
+  </div>
+  <div class="container">
+    <div class="courseEntry">
+      <div id="courseName"></div>
+      <div class="task">
+        <input type="text" placeholder="Test/Assignment" required>
+        <input type="number" placeholder="Weight" required style="width: 9ch;">
+        <input type="number" placeholder="Grade 0-100" required style="width: 12ch;">
+      </div>
+      <div class="bottom">
+        <button>Add Test/Assignment</button>
+        <button>Delete Course</button>
+        <button id="courseGPA">Calculate Course GPA</button>
+      </div>
+    </div>
+    
+  </div>
+  <script src="javascript.js"></script>
+</body>
+</html>
