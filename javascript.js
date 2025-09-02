@@ -1,3 +1,9 @@
+//HOME PAGE NAVIGATION
+const home = document.querySelector(".Logo"); 
+home.addEventListener("click", () =>{
+  window.location.href = "/gpaCalculator/index.html"
+})
+
 //GET COURSE NAME
 const addCourse = document.getElementById("addCourse"); 
 const courseInput = document.getElementById("courseInput");

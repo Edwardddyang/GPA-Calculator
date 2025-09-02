@@ -2,6 +2,17 @@ body{
   display: flex;
   flex-direction: column;
   font-family:'Courier New', Courier, monospace;
+  background-color: aqua;
+}
+
+a{
+  text-decoration: none;
+  color: black;
+}
+
+a:hover{
+  transform: scale(1.05);
+  text-decoration: underline;
 }
 
 .header{
@@ -52,3 +63,10 @@ body{
   display: inline;
 }
 
+#footer{
+  display: flex; 
+  align-items: center;
+  justify-content: center;
+  background-color: black;
+  color: white;
+}
