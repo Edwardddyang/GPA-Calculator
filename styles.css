@@ -1,21 +1,22 @@
-body{
+body {
   display: flex;
   flex-direction: column;
-  font-family:'Courier New', Courier, monospace;
-  background-color: aqua;
+  font-family: 'Courier New', Courier, monospace;
+  background-color: rgba(191, 214, 196, 0.9);
+  min-height: 100vh;
 }
 
-a{
+a {
   text-decoration: none;
   color: black;
 }
 
-a:hover{
+a:hover {
   transform: scale(1.05);
   text-decoration: underline;
 }
 
-.header{
+.header {
   display: flex;
   justify-content: space-between;
   padding: 1vw 4vw;
@@ -23,26 +24,27 @@ a:hover{
   font-size: 1vw;
 }
 
-.header .right{
+.header .right {
   display: flex;
   gap: 2vw;
 }
 
-.main{
+.main {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   font-size: 3vw;
   font-weight: bold;
+  min-height: 30vh;
 }
 
-.buttons{
+.buttons {
   display: inline;
   margin: auto;
 }
 
-.courseEntry{
+.courseEntry {
   display: flex;
   flex-direction: column;
   gap: 2vw;
@@ -54,19 +56,53 @@ a:hover{
   border-radius: 5vw;
 }
 
-.container{
+.container {
   display: flex;
   flex-wrap: wrap;
 }
 
-.bottom{
+.bottom {
   display: inline;
 }
 
-#footer{
-  display: flex; 
+#footer {
+  display: flex;
   align-items: center;
   justify-content: center;
   background-color: black;
   color: white;
+  min-height: 10vh;
+}
+
+#courseInput {
+  font-size: 1.5vw;
+  border-radius: 10px;
+}
+
+#addCourse {
+  font-size: 1.3vw;
+  border-radius: 0.5vw;
+  background-color: rgba(191, 214, 196, 0.9);
+  padding: 0.2vw 0.5vw;
+}
+
+.task {
+  font-size: 1vw;
+  border-radius: 0.5vw;
+}
+
+.weight,
+.grade {
+  font-size: 1vw;
+  border-radius: 0.5vw;
+}
+
+.bottomButtons {
+  font-size: 1vw;
+  border-radius: 0.3vw;
+}
+
+.courseName {
+  font-weight: bold;
+  font-size: 1.5vw;
 }

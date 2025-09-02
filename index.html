@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Canadian GPA Calculator</title>
   <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
   <div class="header">
     <a href="index.html" class="Logo">Logo</a>
@@ -24,20 +26,21 @@
   </div>
   <div class="container">
     <div class="courseEntry">
-      <div id="courseName"></div>
-      <div class="task">
-        <input type="text" placeholder="Test/Assignment" required>
-        <input type="number" placeholder="Weight" required style="width: 9ch;">
-        <input type="number" placeholder="Grade 0-100" required style="width: 12ch;">
+      <div class="courseName"></div>
+      <div>
+        <input type="text" placeholder="Test/Assignment" required class="task">
+        <input type="number" placeholder="Weight %" required style="width: 9ch;" class="weight">
+        <input type="number" placeholder="Grade 0-100" required style="width: 12ch;" class="grade">
+        <button class="addTask">addTask</button>
       </div>
       <div class="bottom">
-        <button>Add Test/Assignment</button>
-        <button>Delete Course</button>
-        <button id="courseGPA">Calculate Course GPA</button>
+        <button class="bottomButtons">Delete Course</button>
+        <button class="bottomButtons">Calculate Course GPA</button>
       </div>
     </div>
   </div>
   <div id="footer">edwarddd.yang@mail.utoronto.ca</div>
   <script src="javascript.js"></script>
 </body>
+
 </html>
