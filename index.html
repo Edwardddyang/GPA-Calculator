@@ -9,37 +9,31 @@
 </head>
 
 <body>
-  <div class="header">
+  <div class="header scroll">
     <a href="index.html" class="Logo">Logo</a>
     <div class="right">
       <a>Login</a>
       <a>Continue as Guest</a>
     </div>
   </div>
-  <div class="main">
+  <div class="main scroll">
     <div>Canadian University GPA Calculator</div>
     <div style="font-size: 1vw;">Discover your grades</div>
-  </div>
-  <div class="buttons">
-    <input type="text" placeholder="Course Code" id="courseInput">
-    <button id="addCourse">Add Course</button>
-  </div>
-  <div class="container">
-    <div class="courseEntry">
-      <div class="courseName"></div>
-      <div class="taskContainer">
-        <input type="text" placeholder="Test/Assignment" required class="task">
-        <input type="number" placeholder="Weight %" required style="width: 9ch;" class="weight">
-        <input type="number" placeholder="Grade 0-100" required style="width: 12ch;" class="grade">
-        <button class="addTask">addTask</button>
-      </div>
-      <div class="bottom">
-        <button class="bottomButtons">Delete Course</button>
-        <button class="bottomButtons">Calculate Course GPA</button>
-      </div>
+    <div class="buttons scroll">
+      <input type="text" placeholder="Course Code" id="courseInput" style="font-family: Nunito,Nunito Fallback;">
+      <button id="addCourse">Add Course</button>
+    </div>
+
+    <div class="container scroll">
+
     </div>
   </div>
-  <div id="footer">edwarddd.yang@mail.utoronto.ca</div>
+
+
+  <!--<button class="GPA">
+    Calculate CGPA
+  </button>-->
+  <div id="footer" class="scroll">edwarddd.yang@mail.utoronto.ca</div>
   <script src="javascript.js"></script>
 </body>
 
