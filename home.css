@@ -1,0 +1,187 @@
+body {
+  display: flex;
+  flex-direction: column;
+  font-family: Nunito, Nunito Fallback;
+  background-color: #bfd6c4e6;
+  min-height: 100vh;
+  background: linear-gradient(-45deg, #6e7ef8, #bfd6c4e6, #93e5ebe6);
+  background-size: 400% 400%;
+  animation: gradient 15s ease infinite;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+button {
+  transition: all 0.3s ease;
+}
+
+button:hover {
+  transform: scale(1.02);
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2)
+}
+
+.scroll {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.scroll.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+a:hover {
+  transform: scale(1.05);
+  text-decoration: underline;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  padding: 1vw 4vw;
+  flex-wrap: wrap;
+  font-size: 1vw;
+}
+
+.header .right {
+  display: flex;
+  gap: 2vw;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 3vw;
+  font-weight: bold;
+  flex: 1;
+}
+
+.buttons {
+  display: inline;
+}
+
+.courseEntry {
+  display: flex;
+  flex-direction: column;
+  padding: 3vw 5vw;
+  margin: 5px auto;
+  border: 2px solid black;
+  width: 500px;
+  border-radius: 5vw;
+  max-width: 60vh;
+  gap: 2vh;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 2vh;
+}
+
+.bottom {
+  display: inline;
+}
+
+#footer {
+  margin-top: 10px;
+  border-top: 1px white solid;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: black;
+  min-height: 8vh;
+  min-width: 100vw;
+}
+
+#courseInput {
+  font-size: 1.5vw;
+  border-radius: 10px;
+}
+
+#addCourse {
+  font-size: 1.5vw;
+  border-radius: 0.5vw;
+  padding: 0.2vw 0.5vw;
+  /*Gradient background*/
+  background: linear-gradient(-45deg, #6e7ef8, #bfd6c4e6, #93e5ebe6);
+  background-size: 400% 400%;
+  animation: gradient 15s ease infinite;
+}
+
+.task {
+  font-size: 1.2vw;
+  max-width: 14ch;
+  border-radius: 0.5vw;
+  font-family: Nunito, Nunito Fallback;
+
+}
+
+.weight,
+.grade {
+  font-size: 1.2vw;
+  border-radius: 0.5vw;
+  font-family: Nunito, Nunito Fallback;
+}
+
+.weight {
+  max-width: 9ch;
+}
+
+.grade {
+  max-width: 12ch;
+}
+
+.bottomButtons {
+  font-size: 1vw;
+  border-radius: 0.3vw;
+  background-color: lightblue;
+  /*Gradient image*/
+  background: linear-gradient(-45deg, #6e7ef8, #bfd6c4e6, #93e5ebe6);
+  background-size: 400% 400%;
+  animation: gradient 15s ease infinite;
+}
+
+.courseName {
+  font-weight: bold;
+  font-size: 1.5vw;
+}
+
+.GPA {
+  margin: 0 auto;
+  max-width: 30vw;
+}
+
+.gpaDisplay {
+  margin: 10px 0;
+  padding: 10px;
+  border: 2px solid #4CAF50;
+  border-radius: 5px;
+  text-align: center;
+  font-size: initial;
+  font-weight: initial;
+}
+
+.inputtedTask {
+  font-size: initial;
+  font-weight: initial;
+}
